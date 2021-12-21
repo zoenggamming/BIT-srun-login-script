@@ -1,6 +1,7 @@
 import os
 import time
 from BitSrunLogin.LoginManager import LoginManager
+import user_login
 
 def is_connect_internet(testip):
     status = os.system(u"ping {} -c 8".format(testip))
@@ -26,9 +27,12 @@ def always_login(username, password, testip, checkinterval):
                 pass
         
 if __name__ == "__main__":
-    username = "Your srun account name"
-    password = "Your password"
+    # username = "Your srun account name"
+    # password = "Your password"
+    username = user_login.input_username()
+    password = user_login.input_password()
     testip = "114.114.114.114" # IP to test whether the Internet is connected
     checkinterval = 5 * 60
+    # checkinterval = 5
 
     always_login(username, password, testip, checkinterval)
