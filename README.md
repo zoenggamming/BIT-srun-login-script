@@ -1,3 +1,5 @@
+fork from [coffeehat/BIT-srun-login-script](https://github.com/coffeehat/BIT-srun-login-script)  
+
 # 更新日志
 ### 2021/12/21
 1. 加入了在命令行窗口中的无密码回显登录功能，提升在公用服务器上运行时的安全性。  
