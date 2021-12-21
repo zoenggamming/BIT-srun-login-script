@@ -1,3 +1,13 @@
+# 更新日志
+### 2021/12/21
+1. 加入了在命令行窗口中的无密码回显登录功能，提升在公用服务器上运行时的安全性。  
+2. 在always_online.py中加入了参数解析功能，可以通过命令行设置测试ip和检验时间间隔  
+具体用法为：
+```bash
+#可以使用--help参数查看详细信息，具体示例如下：
+python always_online.py --test_ip ip_addr --invl second_to_check
+```
+
 加密逻辑来自（目前404了）：https://coding.net/u/huxiaofan1223/p/jxnu_srun/git
 
 另有支持多平台（包括openwrt）的golang版本，请见：https://github.com/Mmx233/BitSrunLoginGo
